@@ -17,7 +17,7 @@
  ```
 
  * Another way of getting it done
-    * : Firse navigate to apache directory
+    * : First navigate to apache directory
         ```bash 
         $ cd /etc/apache2
         $ vi httpd.conf
