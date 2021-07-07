@@ -109,4 +109,4 @@ $ sudo apachectl restart # Stops and starts service immediately
    ```php
    <?php phpinfo(); ?>
    ```
-- This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder in `C:\apache\` directory. Then go to browser and open `http://localhost/phpinfo` and hit enter.
+- This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder in `C:\apache\` directory. Then go to browser and open `http://localhost/phpinfo.php` and hit enter.
