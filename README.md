@@ -92,3 +92,17 @@ $ sudo apachectl restart # Stops and starts service immediately
     C:\apache\bin> .\httpd.exe
     ```
 - Go to your favourite browser, type `http://localhost` and hit enter. If it displays **`It works!`**, then you have successully installed and configured your apache server.
+
+
+## Installation of PHP on WINDOWS
+- Go to url `https://windows.php.net/download/` and download thread safe zip file and extract to `C:\php` folder.
+- Open the extracted folder and find `php8apachexx_xx.dll`. Copy the path of this file by clicking on address bar and pressing `Ctrl+C`.
+- Open `httpd.conf` file inside `C:\apache\conf` folder in a text editor of your choice and add these lines at the end of the file:
+    ```text
+    LoadModule php8_module "path/to/.dll/file/copied/above"
+    AddHandler application/x-httpd-php .php
+    PHPIniDir "C:/php"
+    ```
+- Add these lines exactly. Just copy paste these lines and edit the first line only. Save and close the file now.
+- Go to php directory in `C:` drive and find `php.ini-development` file copy and paste the file using `Ctrl+C` and `Ctrl+V` and rename the file **`php.ini`**. If promted, press Yes button. This is a starting initialisation file.
+- This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder. Then go to browser and open `http://localhost/phpinfo` and hit enter.
