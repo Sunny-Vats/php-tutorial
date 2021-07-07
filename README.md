@@ -50,8 +50,8 @@ $ sudo apachectl restart # Stops and starts service immediately
 3. This installs apache on your windows system. Follow next steps to Configure apache.
 
 ## Configuration of APACHE on WINDOWS
-- Go to `conf` directory and look for file httpd.
-- Open the file in your favourite directory.
+- Go to `conf` directory in apache directory and look for file httpd.
+- Open the file in your favourite editor.
 - Now search for `Apache24`, and replace it with the directory name you placed in Step 2 from `Installation Steps on Windows`.
 - Next, search for `ServerName`. Remove pound(#) sign at the beginning and replace www.example.com:80 with `localhost` and save the file `httpd`.
 - To run apache server you just installed and configured, right click on windows icon in bottom-left corner, and select PowerShell with admin option.
