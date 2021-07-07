@@ -105,4 +105,8 @@ $ sudo apachectl restart # Stops and starts service immediately
     ```
 - Add these lines exactly. Just copy paste these lines and edit the first line only. Save and close the file now.
 - Go to php directory in `C:` drive and find `php.ini-development` file copy and paste the file using `Ctrl+C` and `Ctrl+V` and rename the file **`php.ini`**. If promted, press Yes button. This is a starting initialisation file.
-- This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder. Then go to browser and open `http://localhost/phpinfo` and hit enter.
+- Create a new file using any editor inside any folder and paste this code inside it. Name the file `phpinfo.php`
+   ```php
+   <?php phpinfo(); ?>
+   ```
+- This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder in `C:\apache\` directory. Then go to browser and open `http://localhost/phpinfo` and hit enter.
