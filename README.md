@@ -73,7 +73,7 @@ $ sudo apachectl restart # Stops and starts service immediately
         ```bash
         PS C:\apache\bin> .\httpd.exe -k install    # use uninstall to remove
         ```
-    2. To start the apache service now, open your command prompt or powershell and enter command:
+    2. To start the apache service now, open your powershell(Admin) and enter command:
         ```bash
         C:\> net start Apache2.4    # Check the service name in Control pannel's View Service option
         ```
