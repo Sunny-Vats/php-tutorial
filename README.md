@@ -32,6 +32,30 @@ $ sudo apachectl restart # Stops and starts service immediately
     * : Then go to your favourite browser and type localhost or 127.0.0.1 and hit return
     * : If you see It works!, then you have successfully activated Apache on Mac OS and if not then, read error resolving file.
 
+## Commands and Steps to activate PHP on MAC OS
+- The first thing you have to do is to edit a file called `httpd.conf` as super user using below command:
+    ```bash
+    $ sudo vi /etc/apache2/httpd.conf   # This is a vim editor that comes with Mac OS pre-installed
+    ```
+- In this file, search the keyword `php` by pressing **?** followed by the word php --> `?php` <-- like this.
+- Uncomment the line by removing pound(#) sign at the beginning by pressing **i** to get into insert mode. It should look like this example below:
+    ```text
+    # LoadModule php7_module libexec/apache2/libphp7.so
+    ```
+- Now press `Esc` and enter `:wq` to close while saving the changes to the file.
+- Next we need a configuration file inside /private/etc
+- Now copy the file `php.ini.default` to the new file named `php.ini`, which can be done using Terminal command as a super user
+    ```bash
+    $ sudo cp php.ini.default php.ini   # This will create a new file php.ini and copy the content of .default
+    ```
+- To output your error on the screen of your browser: (Optional)
+    ```bash
+    $ sudo vi php.ini
+    ```
+- Search for the keyword `display_errors` and press `n` if it does not equals off, that means we are searching next occurrence of `display_errors = off` and switch to `on`
+- Save the changes to file using same vim command mentioned earlier.
+- Restart the apache server and you are done.
+> **NOTE:** You can now place your PHP files in either system wide `/Library/WebServer/Documents` folder or inside your personal folder that we named `Sites`.
 
 # **INSTALLATION FOR WINDOWS**
 - Go to url https://apachelounge.com/download and download fully compiled installer zip file according to your architecture type i.e. x86 or x64 or arm64.
