@@ -96,17 +96,18 @@ $ sudo apachectl restart # Stops and starts service immediately
 
 ## Installation of PHP on WINDOWS
 - Go to url `https://windows.php.net/download/` and download thread safe zip file and extract to `C:\php` folder.
-- Open the extracted folder and find `php8apachexx_xx.dll`. Copy the path of this file by clicking on address bar and pressing `Ctrl+C`.
+- Open the extracted folder and find `php8apachex_x.dll`. Copy the path of this file by clicking on address bar and pressing `Ctrl+C`.
 - Open `httpd.conf` file inside `C:\apache\conf` folder in a text editor of your choice and add these lines at the end of the file:
     ```text
-    LoadModule php8_module "path/to/.dll/file/copied/above"
+    LoadModule php_module "path/to/.dll/file/copied/above"
     AddHandler application/x-httpd-php .php
     PHPIniDir "C:/php"
     ```
-- Add these lines exactly. Just copy paste these lines and edit the first line only. Save and close the file now.
-- Go to php directory in `C:` drive and find `php.ini-development` file copy and paste the file using `Ctrl+C` and `Ctrl+V` and rename the file **`php.ini`**. If promted, press Yes button. This is a starting initialisation file.
+- If your directory of php is same as mentioned in here then `php_module` path will be `C:/php/php8apache2_4.dll`. Double quotes will not be removed.
+- Add these lines exactly at the end of file. Just copy paste these lines and edit the first line only. Save and close the file now.
+- Go to php directory in `C:` drive and find `php.ini-development` file. Copy the file using `Ctrl+C`, paste it using `Ctrl+V` in the same folder you are currently in and rename the file to **`php.ini`**. If promted, press Yes button. This is a starting initialisation file.
 - Create a new file using any editor inside any folder and paste this code inside it. Name the file `phpinfo.php`
    ```php
    <?php phpinfo(); ?>
    ```
-- This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder in `C:\apache\` directory. Then go to browser and open `http://localhost/phpinfo.php` and hit enter.
+- This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder in `C:\apache\` directory. Then go to browser and open `http://localhost/phpinfo.php` to test above code and hit enter. You will see a lot of PHP info inside blue-white table.
