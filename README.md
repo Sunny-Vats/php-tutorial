@@ -135,3 +135,8 @@ $ sudo apachectl restart # Stops and starts service immediately
    <?php phpinfo(); ?>
    ```
 - This is will install PHP on your Windows machine. Now you can test your php files by running Apache server using command prompt and placing php files inside htdocs folder in `C:\apache\` directory. Then go to browser and open `http://localhost/phpinfo.php` to test above code and hit enter. You will see a lot of PHP info inside blue-white table.
+
+## Short Method of Installing PHP with Apache and MySQL on MacOS and WINDOWS
+- Download MAMP for Mac OS or WAMP for Windows by going to this link:
+- <a href="https://www.mamp.info/en/mac/" target="_blank">MAMP for Mac OS</a>
+- <a href="https://www.wampserver.com/en" target="_blank">WAMP for Windows</a>
