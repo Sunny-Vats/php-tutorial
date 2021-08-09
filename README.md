@@ -138,5 +138,5 @@ $ sudo apachectl restart # Stops and starts service immediately
 
 ## Short Method of Installing PHP with Apache and MySQL on MacOS and WINDOWS
 - Download MAMP for Mac OS or WAMP for Windows by going to this link:
-- <a href="https://www.mamp.info/en/mac/" target="_blank">MAMP for Mac OS</a>
-- <a href="https://www.wampserver.com/en" target="_blank">WAMP for Windows</a>
+	- <a href="https://www.mamp.info/en/mac/" target="_blank">MAMP for Mac OS</a>
+	- <a href="https://www.wampserver.com/en" target="_blank">WAMP for Windows</a>
